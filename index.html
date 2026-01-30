@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit kumar pal</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init({
+                publicKey: "DcJxNRHxwBajl-Kjd",
+            });
+        })();
+
+        window.onload = function () {
+            const form = document.getElementById("contact-form");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                emailjs.sendForm("service_r0c986g", "template_fc3scgw", form)
+                    .then(() => {
+                        alert("✅ Message sent successfully!");
+                        form.reset();
+                    }, (error) => {
+                        console.error("FAILED...", error);
+                        alert("Failed to send message. Please try again later.");
+                    });
+            });
+        };
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="port.css">
+
+</head>
+
+<body>
+
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="shape circle">
+                <svg width="100" height="100">
+                    <path d="M50,10 a40,40 0 1,1 0,80 a40,40 0 1,1 0,-80" stroke="#fff" stroke-width="8" fill="none"
+                        stroke-linecap="round" />
+                    <circle class="dot" r="8" fill="#ff00aa" />
+                </svg>
+            </div>
+            <div class="shape triangle">
+                <svg width="100" height="100">
+                    <path d="M50,10 L90,90 L10,90 Z" stroke="#fff" stroke-width="8" fill="none"
+                        stroke-linecap="round" />
+                    <circle class="dot" r="8" fill="#ff00aa" />
+                </svg>
+            </div>
+            <div class="shape square">
+                <svg width="100" height="100">
+                    <path d="M10,10 L90,10 L90,90 L10,90 Z" stroke="#fff" stroke-width="8" fill="none"
+                        stroke-linecap="round" />
+                    <circle class="dot" r="8" fill="#ff00aa" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="cursor"></div>
+        <header class="header">
+            <a href="#Home" class="logo">Amit Kumar <span>Pal</span></a>
+
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <nav class="navbar">
+
+                <a href="#Home">Home</a>
+                <a href="#education">Education</a>
+                <a href="#Projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="#contact-form">Contact</a>
+            </nav>
+        </header>
+        <section id="Home">
+            <div class="home">
+                <div class="home-content">
+                    <h1>Hi, I'm <a href="#about">Amit</a></h1>
+                    <h3 class="text-animation">i'm a <span></span></h3>
+                    <p>Hi, I’m Amit 👋
+                        A 20-year-old Computer Science student passionate about coding, problem-solving, and
+                        creating
+                        impactful projects.
+                        I love experimenting with web apps, learning new tech, and pushing myself to grow every day.
+                        🚀
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/amit-kumar-pal-b529b328a/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/AmitPal96s" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/amit_pal9836/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/Amitpal43689229" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btns">
+                        <button class="hire-btn">Hire</button>
+                        <a href="https://drive.google.com/file/d/1ydn8PkkYPdL9KadPzqrybroNHy8Pfz80/view?usp=sharing"><button
+                                class="resume-btn">Resume</button></a>
+
+                    </div>
+
+                </div>
+                <div class="home-img">
+                    <img src="assets/profile2.jpg">
+                </div>
+            </div>
+        </section>
+
+        <div id="string">
+            <svg width="1400" height="300">
+                <path d="M 10 100 Q 500 100 2000 100" stroke="white" fill="transparent" />
+            </svg>
+        </div>
+
+        <section class="education" id="education">
+            <h2 class="heading">Education</h2>
+
+            <div class="timeline-items">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        2020
+                    </div>
+                    <div class="timeline-content">
+                        <h3>10th</h3>
+                        <p>Completed Higher Secondary Education from Alipore Takshal Vidya Pith with 66% aggregate
+                            marks.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        2022
+                    </div>
+                    <div class="timeline-content">
+                        <h3>12th</h3>
+                        <p>Completed Class 12th (Higher Secondary) from Alipore Takshal Vidya Pith in (PCM) with 78%
+                            aggregate marks.</p>
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        2023
+                    </div>
+                    <div class="timeline-content">
+                        <h3>College</h3>
+                        <p>B.Tech in Computer Science and Engineering (5th Semester) — Budge Budge Institute of
+                            Technology"
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects" id="Projects">
+            <h2 class="heading">Projects</h2>
+
+            <div class="swiper project-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="https://your-netflix-clone-link.com" target="_blank" class="card">
+                            <img src="assets/netflix clone.png" alt="Netflix Clone" class="card-img" />
+                            <div class="card-content">
+                                <h3>Netflix Clone</h3>
+                                <p>Netflix Clone using HTML and CSS to replicate the look and feel of Netflix’s
+                                    user interface. The project includes a modern homepage with a navigation bar,
+                                    smooth
+                                    hover
+                                    effects, and a clean responsive design that adapts to different screen
+                                    sizes.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://ticc-tac-toe-amitpal96.netlify.app/" target="_blank" class="card">
+                            <img src="assets/Tic-tac-toe.png" alt="Tic Tac Toe" class="card-img" />
+                            <div class="card-content">
+                                <h3>Tic-Tac-Toe</h3>
+                                <p>A simple yet engaging Tic Tac Toe game using HTML, CSS, and JavaScript. The game
+                                    allows two players to take turns marking their moves on a 3x3 grid, with
+                                    automatic
+                                    win detection
+                                    and draw conditions.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://currency-converter-amitpal96.netlify.app/" target="_blank" class="card">
+                            <img src="assets/currency-converter.png" alt="Currency Converter" class="card-img" />
+                            <div class="card-content">
+                                <h3>Currency Converter</h3>
+                                <p>Developed using HTML, CSS, JavaScript, and integrated real-time currency exchange
+                                    API.
+                                    Converts between multiple currencies with live exchange rates.
+                                    Simple, responsive, and user-friendly interface.
+                                    Demonstrates API integration and asynchronous JavaScript (fetch).ve design.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://nike-landingpage-amitpal.netlify.app/" target="_blank" class="card">
+                            <img src="assets/nike-landing.png" alt="Nike Landing Page" class="card-img" />
+                            <div class="card-content">
+                                <h3>Nike Landing Page</h3>
+                                <p>Responsive landing page with modern UI and smooth hover transitions.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://amitpalportfolio96.netlify.app/" target="_blank" class="card">
+                            <img src="assets/portfolio.png" alt="Portfolio" class="card-img" />
+                            <div class="card-content">
+                                <h3>Portfolio Website</h3>
+                                <p>Modern portfolio with GSAP animations, Swiper sliders, and EmailJS integration.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://wizardz-animatedpage-amitpal96.netlify.app/" target="_blank" class="card">
+                            <img src="assets/Wizardz landing page.png" alt="Tic Tac Toe" class="card-img" />
+                            <div class="card-content">
+                                <h3>wIZARDZ landing page</h3>
+                                <p>A simple yet engaging wIZAEDZ Consultancy landing page using GSAP and Lines </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://wizardz-animatedpage-amitpal96.netlify.app/" target="_blank" class="card">
+                            <img src="assets/Screenshot 2026-01-30 203404.png" alt="Tic Tac Toe" class="card-img" />
+                            <div class="card-content">
+                                <h3>Live-location Tracking App</h3>
+                                <p>Built a real-time location tracking web app using Node.js, Express, Socket.IO, and
+                                    Leaflet, enabling multiple users to share and view live GPS data on an interactive
+                                    map.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation + Pagination -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
+        <section class="skills" id="skills">
+            <h2 class="heading">Skills</h2>
+            <div class="skills-container">
+                <div class="scroll-wrapper">
+
+                    <ul class="scroll-track" id="scrollTrack">
+                        <li><img src="assets/html-5.png"></i></li>
+                        <li><img src="assets/css-3.png"></li>
+                        <li><img src="assets/js.png"></li>
+                        <li><img src="assets/react.png"></li>
+                        <li><img src="assets/icons8-tailwind-css-48.png"></li>
+                        <li><img src="assets/icons8-mongo-db-48.png"></i></li>
+                        <li><img src="assets/Node.js.png"></li>
+                        <li><img src="assets/figma.png"></i></li>
+                        <li><img src="assets/gsap-logo.png"></i></li>
+                        <li><img src="assets/icons8-nodejs-48.png"></i></li>
+                        <li><img src="https://swiperjs.com/images/swiper-logo.svg"></i></li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="assets/profile2.jpg">
+                </div>
+                <div class="about-content">
+                    <h1>About <span>Me</span></h1>
+                    <p>Hi, I’m <span>Amit Pal</span> — a passionate Software Engineer and Computer Science student.
+                        I
+                        enjoy
+                        building web
+                        applications using HTML, CSS, JavaScript, React, and Java, and I’m exploring the MERN stack
+                        to
+                        grow
+                        as a full-stack developer. I love solving problems, learning new technologies, and creating
+                        impactful digital solutions.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <form action="" class="action" id="contact-form">
+                <div class="input-group">
+                    <div class="input_box">
+                        <input type="text" name="name" placeholder="Full Name">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="number" name="phone" placeholder="Phone Number">
+                        <input type="subject" name="title" placeholder="subject">
+                        <textarea name="message" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+                        <input type="submit" value="send Message" class="btns">
+                    </div>
+                </div>
+
+                <div class="input_group2">
+                    <spline-viewer class="robot-3d"
+                        url="https://prod.spline.design/mLoNWy5f3CHvZcAg/scene.splinecode"></spline-viewer>
+                </div>
+            </form>
+
+        </section>
+
+        <footer class="footer">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/amit-kumar-pal-b529b328a/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/AmitPal96s" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/amit_pal9836/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/Amitpal43689229" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <ul class="list">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+            <p class="copyright">@ Amit Kumar Pal | All Rights Reserved</p>
+
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+            integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+            integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.84/build/spline-viewer.js"></script>
+
+        <script src="port.js"></script>
+
+</body>
+
+</html>
